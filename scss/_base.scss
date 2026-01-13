@@ -1,0 +1,32 @@
+@use 'variables' as v;
+
+body {
+    font-family: v.$font-family;
+    font-size: v.$font-size-base;
+    color: v.$grey-400;
+    background-color: #fafafa;
+    line-height: 1.6;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 4rem;
+
+    &__title {
+        font-size: 2rem;
+        font-weight: v.$fw-light;
+        color: v.$grey-500;
+        margin-bottom: 1rem;
+
+        &--bold {
+            font-weight: v.$fw-bold;
+            display: block;
+        }
+    }
+
+    &__description {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+}
+
