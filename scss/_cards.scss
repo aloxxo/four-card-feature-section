@@ -1,5 +1,48 @@
 @use 'variables' as v;
 
-.cards {
+.card {
     background-color: v.$white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 150, 0.14);
+    border-top: 4px solid transparent;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        font-size: 1.3rem;
+        font-weight: v.$fw-bold;
+        color: v.$grey-500;
+        margin-bottom: 0.5rem;
+    }
+
+    &__description {
+        font-size: .85rem;
+    }
+
+    img {   
+        width: 64px;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        align-self: flex-end;
+    }
+
+    &--supervisor {
+        border-top-color: v.$cyan;
+    }
+
+    &--team-builder {
+        border-top-color: v.$red;
+    }
+
+    &--karma {
+        border-top-color: v.$orange;
+    }
+
+    &--calculator {
+        border-top-color: v.$blue;
+    }
 }
+
+
+
