@@ -41,6 +41,39 @@ body {
   gap: 2rem;
 }
 
+@media (min-width: 1024px) {
+  .intro__title {
+    font-size: 2.15rem;
+  }
+  .intro__description {
+    font-size: 0.9rem;
+    padding: 0 30px;
+  }
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+    align-items: stretch;
+  }
+  .card--supervisor {
+    grid-column: 1;
+    grid-row: 1/span 2;
+    align-self: center;
+  }
+  .card--team-builder {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .card--karma {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .card--calculator {
+    grid-column: 3;
+    grid-row: 1/span 2;
+    align-self: center;
+  }
+}
 .card {
   background-color: hsl(0, 0%, 100%);
   padding: 2rem;
@@ -62,7 +95,7 @@ body {
 .card img {
   width: 64px;
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.9rem;
   align-self: flex-end;
 }
 .card--supervisor {
